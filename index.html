@@ -5,27 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Responsive Layout</title>
 </head>
 <body>
-    <header>
+    <header class="flex align-center">
         <div class="container flex align-center space-between ">
             <div class="logo">LOGO</div>
             <div class="nav">
                 <nav>
-                    <ul>
-                        <li>
-                            Menu icon
-                        </li>
+                    <ul class="flex">
+                        <li>Planning</li>
+                        <li>Testimonials</li>
+                        <li>Features</li>
+                        <li>About Us</li>
+                        <li><a href="#" class="button">Get Started</a></li>
                     </ul>
+                    
                 </nav>
+                <a class="menu-icon" href="#"><i class="fa-solid fa-bars"></i></a>
             </div>
         </div>
     </header>
     <main>
         <section class="introduction">
             <div class="container">
-                <div class="cards border">
+                <div class="cards">
                     <div class="card">
                     </div>
                     <div class="card">
@@ -39,12 +45,37 @@
                 </div>
             </div>
         </section>
+
         <section class="planning">
             <div class="container">
-                <div class="col border">
-                    <div class="col-image border"></div>
-                    <div class="col-card border"></div>
+                <div class="col ">
+                    <div class="col-image"></div>
+                    <div class="col-card"></div>
+                </div>
             </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <div class="text">TEXT</div>
+                <div class="id-card">                       
+                </div>
+                <div class="id-card">                      
+                </div>
+                <div class="id-card">                      
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <div class="container">
+                <div class="title">TITLE</div>
+                <div class="benefit-card"></div>
+                <div class="benefit-card"></div>
+                <div class="benefit-card"></div>
+                <div class="benefit-card"></div>
+                <div class="benefit-card"></div>
+                <div class="benefit-card"></div>
             </div>
         </section>
     </main>

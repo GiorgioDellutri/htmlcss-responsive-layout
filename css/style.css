@@ -30,18 +30,37 @@
     justify-content: space-between;
 }
 
-.cards .card{
+.card{
     background-color: blueviolet;
     width:100% ;
-    /* ALTEZZA DA RIMUOVERE DOPO CONTENUTI */
+    /*! ALTEZZA DA RIMUOVERE DOPO CONTENUTI */
     height: 300px;
-    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 header{
     background-color: #1181F6;
 }
 
+header div.nav a.menu-icon{
+    display: block;
+}
+
+header nav ul li{
+    list-style-type: none;
+    padding: 1rem;
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+nav{
+    display: none;
+}
+
+header a{
+    color: black;
+}
 section.planning{
     background-color: #9792E4;
     margin-top: 3rem;
@@ -50,26 +69,54 @@ section.planning{
 section.planning div.col .col-image,
 .col-card{
     width: 100%;
-     /* ALTEZZA DA RIMUOVERE DOPO CONTENUTI */
+     /* !ALTEZZA DA RIMUOVERE DOPO CONTENUTI */
     height: 300px;
-    /* background-color: rgb(168, 96, 236); */
     text-align: center;
     background-color: rgb(74, 165, 240);
     margin-bottom: 2rem;
 }
 
+section.testimonials div.text{
+    width: 100%;
+    /*! ALTEZZA DA RIMUOVERE DOPO CONTENUTI */
+    height: 200px;
+    background-color: rgb(76, 182, 108);
+}
 
+section.testimonials div.id-card{
+    width: 100%;
+    height: 200px;
+    background-color: blueviolet;
+    margin-top: 2rem;
+    border-radius: 50px;
+}
 
+section.benefits{
+    background-color: #9792E4;
+}
+
+section.benefits div.title{
+    width: 100%;
+    height:80px;
+    background-color: lightsalmon;
+}
+
+section.benefits div.benefit-card{
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    border-radius: 30px;
+    margin-top: 2rem;
+}
 
 
 /* RESPONSIVE */
 
-/* TABLET */
+/*? TABLET */
 @media screen and (min-width: 768px){
+
     .container{
-        width: 80%;        
-        padding: 2rem;
-        margin: 0 auto;
+        width: 100%;   
     }
 
     .cards{
@@ -93,10 +140,8 @@ section.planning div.col .col-image,
         height: 300px;
     } 
 
-    section.planning .col {
-        background-color: #9792E4;
-        margin-top: 3rem;
-        display: flex;
+    header div.nav a.menu-icon{
+        display: block;
     }
 
     section.planning div.col .col-image,
@@ -107,36 +152,62 @@ section.planning div.col .col-image,
     /* background-color: rgb(168, 96, 236); */
     text-align: center;
     background-color: rgb(74, 165, 240);
-    margin: 1rem;
+    }
+
+    section.benefits div.benefit-card{
+        display: inline-block;
+        width: 50%;
+        height: 200px;
+        background-color: white;
+        border-radius: 30px;
+    }
 }
-}
+
+/*? DESKTOP */
 
 @media screen and (min-width: 992px){
     .container{
-        width: 80%;        
-        padding: 2rem;
-        margin: 0 auto;
+        width: 65%; 
+        padding: 1rem;       
     }
 
-    .cards{
+    header div.nav a.menu-icon{
+        display: none;
+    }
+
+    nav{
+        display: block;
+    }
+
+    nav ul li a.button{
+        border-radius:28px;
+        cursor:pointer;
+        background-color: white;
+        font-size:17px;
+        padding:7px 15px;
+        text-decoration:none;
+    }
+    
+    section.planning .col{
         display: flex;
-        flex-wrap: wrap;
     }
 
-    .cards .card{
-        background-color: blueviolet;
-        width: calc(100% / 3);
-        /* ALTEZZA DA RIMUOVERE DOPO CONTENUTI */
-        height: 300px;
-        margin: 0;
-        border: 2px solid white;
-    } 
+    section.planning div.col .col-image,
+    .col-card{
+        margin: .5rem;
+    }
 
-    .cards .card:first-child{
-        background-color: blueviolet;
-        width: calc((100% / 3) * 2 );
-        /* ALTEZZA DA RIMUOVERE DOPO CONTENUTI */
+
+    section.benefits div.benefit-card{
+        display: inline-block;
+        width: calc(100% / 4);
         height: 300px;
-    } 
+        background-color: white;
+        border-radius: 30px;
+    }
+
+
+
+
 }
 
