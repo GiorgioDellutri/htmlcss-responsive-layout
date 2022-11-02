@@ -38,8 +38,13 @@
     margin-top: 2rem;
 }
 
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+
 header{
     background-color: #1181F6;
+    height: 60px;
 }
 
 header div.nav a.menu-icon{
@@ -50,7 +55,7 @@ header nav ul li{
     list-style-type: none;
     padding: 1rem;
     color: white;
-    font-size: 1.3rem;
+    font-size: 1rem;
     cursor: pointer;
 }
 
@@ -117,7 +122,27 @@ div.about-img{
     margin-top: 2rem;
 }
 
+section.get{
+    background-color: #9792E4;
+}
 
+section.get div.free{
+    width: 100%;
+    height: 600px;
+    background-color: lightgoldenrodyellow;
+}
+
+footer{
+    background-color:#333333 ;
+}
+
+footer div.credit{
+    width: 100%;
+    height: 200px;
+    background-color: lightgray;
+}
+
+/*!############################################################# */
 /* RESPONSIVE */
 
 /*? TABLET */
@@ -183,12 +208,34 @@ div.about-img{
 
     section.about div.about-text,
     div.about-img{
-        width: calc(100% / 2 - 4rem);
         height: 400px;
         background-color: cadetblue;
-        margin: 2rem;
+        margin: 1rem;
     }
-}
+
+    section.about div.about-text{
+        flex-basis: 60%;
+    }
+
+    section.about div.about-img{
+        flex-basis: 40%;
+    }
+
+    section.get div.free{
+        width: 70%;
+        height: 300px;
+        background-color: lightgoldenrodyellow;
+        margin:  0 auto;
+    }
+
+    footer div.credit{
+        width: 65%;
+        height: 200px;
+        margin: 0 auto;
+        background-color: lightgray;
+    }
+
+/*!############################################################# */
 
 /*? DESKTOP */
 
@@ -233,8 +280,4 @@ div.about-img{
         margin: 0.8rem;
     }
 
-
-
-
 }
-
