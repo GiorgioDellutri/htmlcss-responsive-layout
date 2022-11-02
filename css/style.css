@@ -156,10 +156,15 @@ section.benefits div.benefit-card{
 
     section.benefits div.benefit-card{
         display: inline-block;
-        width: 50%;
+        width:50%;
         height: 200px;
         background-color: white;
         border-radius: 30px;
+    }
+
+    section.benefits div.card-container{
+        display: flex;
+        justify-content: space-between;
     }
 }
 
