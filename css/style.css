@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+header{
+    background-color: #1181F6;
+    padding: 10px;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 768px){
+    .container{
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+}
