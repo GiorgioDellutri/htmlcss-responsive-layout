@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-.border{
-    border: 1px dashed black;
-}
-
 .container{
     width: 100%;
     margin: 0 auto;
@@ -31,11 +27,12 @@
 }
 
 .card{
-    background-color: blueviolet;
+    background-color: #AFDBFD;
     width:100% ;
     /*! ALTEZZA DA RIMUOVERE DOPO CONTENUTI */
     height: 300px;
     margin-top: 2rem;
+    border-radius: 20px;
 }
 
 body{
@@ -44,11 +41,11 @@ body{
 
 header{
     background-color: #1181F6;
-    height: 60px;
 }
 
 header div.nav a.menu-icon{
     display: block;
+    font-size: 2rem;
 }
 
 header nav ul li{
@@ -64,7 +61,8 @@ nav{
 }
 
 header a{
-    color: black;
+    color: white;
+    font-size: 1.5rem;
 }
 section.planning{
     background-color: #9792E4;
@@ -91,7 +89,7 @@ section.testimonials div.text{
 section.testimonials div.id-card{
     width: 100%;
     height: 200px;
-    background-color: blueviolet;
+    background-color: #AFDBFD;
     margin-top: 2rem;
     border-radius: 50px;
 }
@@ -260,6 +258,7 @@ footer div.credit{
         font-size:17px;
         padding:7px 15px;
         text-decoration:none;
+        color: black;
     }
     
     section.planning .col{
