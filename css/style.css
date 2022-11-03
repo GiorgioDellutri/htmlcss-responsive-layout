@@ -1,8 +1,9 @@
 /** Variables */
 
 :root{
-    --header-bg-color: #0084fd;
-
+    --main-bg-color: #0084fd;
+    --paragraph-text-color: rgb(95, 95, 95);
+    --main-card-color: #afdbfd;
 }
 
 *{
@@ -36,8 +37,6 @@
 .card{
     background-color: #AFDBFD;
     width:100% ;
-    /*! ALTEZZA DA RIMUOVERE DOPO CONTENUTI */
-    height: 300px;
     margin-top: 2rem;
     border-radius: 20px;
 }
@@ -47,7 +46,7 @@ body{
 }
 
 header{
-    background-color: var(--header-bg-color);
+    background-color: var(--main-bg-color);
 }
 
 header div.nav a.menu-icon{
@@ -71,6 +70,25 @@ header a{
     color: white;
     font-size: 1.5rem;
 }
+
+/* ! ########### INTRODUCTION SECTION ########### */
+
+section.introduction div.card{
+    padding: 3rem;
+}
+
+section.introduction div.card h1{
+    color: var(--main-bg-color);
+}
+
+section.introduction div.card p{
+    color: var(--paragraph-text-color);
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: bolder;
+    line-height: 30px;
+}
+
 section.planning{
     background-color: #9792E4;
     margin-top: 3rem;
@@ -80,7 +98,7 @@ section.planning div.col .col-image,
 .col-card{
     width: 100%;
      /* !ALTEZZA DA RIMUOVERE DOPO CONTENUTI */
-    height: 300px;
+    
     text-align: center;
     background-color: rgb(74, 165, 240);
     margin-bottom: 2rem;
@@ -163,7 +181,7 @@ footer div.credit{
     }
 
     .cards .card{
-        background-color: blueviolet;
+        background-color: var(--main-card-color);
         width: calc(100% / 3);
         /* ALTEZZA DA RIMUOVERE DOPO CONTENUTI */
         height: 300px;
@@ -172,7 +190,7 @@ footer div.credit{
     } 
 
     .cards .card:first-child{
-        background-color: blueviolet;
+        background-color: var(--main-card-color);
         width: calc((100% / 3) * 2 );
         /* ALTEZZA DA RIMUOVERE DOPO CONTENUTI */
         height: 300px;
