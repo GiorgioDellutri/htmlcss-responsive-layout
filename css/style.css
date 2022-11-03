@@ -361,11 +361,21 @@ footer div.credit{
         padding: 40px;
     }
 
-
     div.id-card{
         display:flex ;
+        justify-content: center;
+        align-items: center;
     }
 
+    div.id-card figure{
+        flex-basis: 25%;
+    }
+
+    div.id-card .card-description{
+        flex-basis: 75%;
+        margin-left: 20px;
+        text-align: left;
+    }
 
 
     section.benefits div.benefit-card{
