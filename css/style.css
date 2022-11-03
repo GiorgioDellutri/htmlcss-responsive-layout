@@ -24,8 +24,17 @@
     display: flex;
 }
 
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+
 .align-center{
     align-items: center;
+}
+
+.align-end{
+    align-items: flex-end;
 }
 
 .justify-center{
@@ -34,6 +43,10 @@
 
 .space-between{
     justify-content: space-between;
+}
+
+.row{
+    flex-direction: row;
 }
 
 .column{
@@ -143,57 +156,112 @@ section.planning{
     margin-top: 60px;
 }
 
-section.planning div.col .col-image,
+section.planning  .col-image,
 .col-card{
     width: 100%;
     margin-bottom: 2rem;
+    padding: 1rem;
     color: var(--main-text-color);
 }
 
-div.col .col-image img{
+.col-image img{
     width: 100%;
 }
+
 div.col-image h1{
     font-size: 2rem;
     font-weight: bolder;
-    margin-bottom: 40px;
+    margin: 40px 0;
 }
 
 div.col-card{
+    padding: 1.5rem;
     background-color: white;
     border-radius: 50px;
     color: black;
-    padding: 1.5rem;
 }
 
 div.col-card img{
     width: 100%;
+    margin-bottom: 10px;
+}
+
+div.col-card h1{
     margin-bottom: 20px;
 }
 
 div.col-card p{
     font-size: 1.1rem;
     font-style: italic;
-    margin-top: 20px;
+    margin-bottom: 40px;
 }
+
+div.arrow{
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    background-color: var(--secodary-bg-color);
+    border-radius: 50%;
+    padding: 10px;
+}
+
 
 
 /* * ########### TESTIMONIALS SECTION ########### */
 section.testimonials div.text{
     width: 100%;
-    /*! ALTEZZA DA RIMUOVERE DOPO CONTENUTI */
-    height: 200px;
-    background-color: rgb(76, 182, 108);
+}
+
+div.text p{
+    font-size: 1.2rem ;
+    margin: 2rem;
+    line-height: 35px;
+}
+
+div.text h1{
+    font-size: 2.4rem;
+    color: var(--secodary-bg-color);
 }
 
 section.testimonials div.id-card{
     width: 100%;
-    height: 200px;
-    background-color: #AFDBFD;
+    background-color: var(--secodary-bg-color);
     margin-top: 2rem;
     border-radius: 50px;
+    padding: 1.8rem;
+    color: white;
 }
 
+div.id-card figure{
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+div.id-card figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div.id-card i{
+    font-size: 1.5rem;
+}
+
+div.id-card span{
+    font-size: 1.2rem;
+}
+
+div.id-card p{
+    font-size: 1.3rem;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+/* * ########### BENEFITS SECTION ########### */
 section.benefits{
     background-color: #9792E4;
 }
@@ -271,21 +339,34 @@ footer div.credit{
         display: block;
     }
 
+    section.planning .col-image,
+    .col-card{
+        width: 100%;
+    }
+    
     div.card img{
         padding-top: 30px;
         width: 50%;
     }
-    
 
-    section.planning div.col .col-image,
-    .col-card{
-    width: 100%;
-     /* ALTEZZA DA RIMUOVERE DOPO CONTENUTI */
-    height: 500px;
-    /* background-color: rgb(168, 96, 236); */
-    text-align: center;
-    background-color: rgb(74, 165, 240);
+    div.col-image h1{
+        font-size: 4rem;
     }
+
+    div.col-card{
+        padding: 1.5rem 2.5rem;
+    }
+
+    div.col-card img{
+        padding: 40px;
+    }
+
+
+    div.id-card{
+        display:flex ;
+    }
+
+
 
     section.benefits div.benefit-card{
         display: inline-block;
@@ -340,6 +421,7 @@ footer div.credit{
 /*? DESKTOP */
 
 @media screen and (min-width: 992px){
+
     .container{
         width: 65%;  
         padding: .5rem 2rem;    
@@ -367,20 +449,31 @@ footer div.credit{
         flex-wrap: nowrap;
     }
 
-    div.card img{
+    section.introduction div.card img{
         padding: 0;
         width: 100%;
         height: 100%;
     }
 
-    section.planning .col{
+
+    section.planning div.container{
         flex-direction: row;
     }
 
-    section.planning div.col .col-image,
+    section.planning  .col-image,
     .col-card{
-        margin: .5rem;
+        padding: 50px;
+
     }
+
+
+
+
+    div.col-image h1{
+        font-size: 2rem;
+    }
+
+    
 
     section.benefits div.benefit-card{
         display: inline-block;
