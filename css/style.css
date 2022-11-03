@@ -1,3 +1,10 @@
+/** Variables */
+
+:root{
+    --header-bg-color: #0084fd;
+
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -7,7 +14,7 @@
 .container{
     width: 100%;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 1.5rem 2rem;
 }
 
 .flex{
@@ -40,19 +47,19 @@ body{
 }
 
 header{
-    background-color: #1181F6;
+    background-color: var(--header-bg-color);
 }
 
 header div.nav a.menu-icon{
     display: block;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 header nav ul li{
     list-style-type: none;
     padding: 1rem;
     color: white;
-    font-size: 1rem;
+    font-size: 1.1rem;
     cursor: pointer;
 }
 
@@ -239,8 +246,8 @@ footer div.credit{
 
 @media screen and (min-width: 992px){
     .container{
-        width: 65%; 
-        padding: 1rem;       
+        width: 65%;  
+        padding: .5rem 2rem;    
     }
 
     header div.nav a.menu-icon{
