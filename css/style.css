@@ -20,6 +20,17 @@
     padding: 1.5rem 2rem;
 }
 
+.small-container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.relative{
+    position: relative;
+}
+
 .flex{
     display: flex;
 }
@@ -72,6 +83,7 @@
 body{
     font-family: 'PT Sans', sans-serif;
     line-height: 30px;
+    min-width: 482px;
 }
 
 header{
@@ -140,10 +152,11 @@ div.card button.app-store{
     margin-top: 40px;
 }
 
+
 div.card img{
     padding-top: 30px;
-    width: 100%;
-    height: 100%;
+    width: 100px;
+    height: 100px;
 }
 
 div.small-card{
@@ -249,15 +262,16 @@ section.testimonials div.id-card{
 div.id-card figure{
     width: 190px;
     height: 190px;
-    border-radius: 50%;
     margin: 0 auto;
     overflow: hidden;
     margin-bottom: 15px;
 }
 
-div.id-card figure img{
-    width: 100%;
-    height: 100%;
+div.id-card img{
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+
     object-fit: cover;
 }
 
@@ -279,13 +293,14 @@ div.id-card p{
 section.benefits{
     background-color: #9792E4;
     color: rgb(141, 135, 135);
+    padding-bottom: 2rem;
 }
 
 section.benefits div.title{
     width: 100%;
     height:80px;
     text-align: center;
-    margin: 3rem;
+    margin: 2rem;
 }
 
 section.benefits div.title h1{
@@ -325,37 +340,121 @@ section.benefits div.benefit-card a.button-more{
 /* * ########### ABOUT SECTION ########### */
 
 section.about{
-    margin: 5rem 0;
+    margin: 4rem 0;
+    line-height: 40px;
 }
 
 section.about div.about-text,
 div.about-img{
     width: 100%;
 }
+section.about div.about-text h1{
+    font-size: 3rem;
+    color: #9792E4;
+    margin-bottom: 3rem;
+}
 
+
+section.about div.about-img{
+    margin-top: 48px;
+}
+
+section.about div.about-img img{
+    width: 200px;
+    border-radius: 50%;
+}
+
+section.about div.about-img h1{
+    color: #9792E4;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+section.about div.about-img a.button-linkedin{
+    background-color: #9792e4;
+    color: white;
+}
+
+div.about-img div.quotation-marks i.fa-quote-left{
+    font-size: 4rem;
+    color: #9792e4;
+}
+
+div.about-img div.quotation-marks{
+    position: absolute;
+    top: 10px;
+    left: 150px;
+}
 
 /* * ########### GET SECTION ########### */
 
-
 section.get{
     background-color: #9792E4;
+    text-align: center;
+    color: white;
 }
 
 section.get div.free{
     width: 100%;
-    height: 600px;
-    background-color: lightgoldenrodyellow;
 }
+
+section.get div.free p:first-child{
+    text-transform: uppercase;
+    color: #bebaf5;
+}
+
+section.get div.free p:nth-child(2){
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+section.get div.free h1{
+    font-size: 5.5rem;
+    margin: 3rem ;
+    color: #FBB560;
+}
+
+section.get div.free h1 + p{
+    margin-bottom: 2rem;
+}
+
+section.get div.free a.button-get-started-big{
+    color: #9792e4;
+    font-weight: bold;
+    border-radius:28px;
+    cursor:pointer;
+    font-size:17px;
+    padding:15px 80px;
+}
+
+section.get div.free span.copyright{
+    display: block;
+    margin-top: 2rem;
+}
+
+/* * ########### FOOTER ########### */
+
 
 footer{
     background-color:#333333 ;
+    color: white;
 }
 
 footer div.credit{
     width: 100%;
     height: 200px;
-    background-color: lightgray;
 }
+
+footer div.credit p{
+    margin-bottom: 2rem;
+}
+
+div.credit span a{
+    color: #9792e4;
+}
+
 
 /*!############################################################# */
 /* RESPONSIVE */
@@ -381,7 +480,6 @@ footer div.credit{
     .cards .card:first-child{
         background-color: var(--main-card-color);
         width: calc((100% / 3) * 2 - 28px );
-        
     } 
 
     header div.nav a.menu-icon{
@@ -393,10 +491,7 @@ footer div.credit{
         width: 100%;
     }
     
-    div.card img{
-        padding-top: 30px;
-        width: 50%;
-    }
+
 
     div.col-image h1{
         font-size: 4rem;
@@ -406,8 +501,8 @@ footer div.credit{
         padding: 1.5rem 2.5rem;
     }
 
-    div.col-card img{
-        padding: 40px;
+    div.about-img{
+        margin-left: 3rem;
     }
 
     div.id-card{
@@ -426,14 +521,8 @@ footer div.credit{
         text-align: left;
     }
 
-
     section.benefits div.benefit-card{
-        display: inline-block;
         width:calc(100% / 2 - 2rem);
-        background-color: white;
-        border-radius: 30px;
-        margin: 1rem;
-        text-align: left;
     }
 
     section.benefits div.card-container{
@@ -446,33 +535,21 @@ footer div.credit{
         display: flex;
     }
 
-    section.about div.about-text,
-    div.about-img{
-        background-color: cadetblue;
-        margin: 1rem;
-    }
-
     section.about div.about-text{
-        flex-basis: 60%;
+        flex-basis: 70%;
+        padding: 2rem;
     }
 
     section.about div.about-img{
-        flex-basis: 40%;
+        flex-basis: 30%;
     }
 
     section.get div.free{
         width: 70%;
-        height: 300px;
-        background-color: lightgoldenrodyellow;
         margin:  0 auto;
     }
 
-    footer div.credit{
-        width: 65%;
-        height: 200px;
-        margin: 0 auto;
-        background-color: lightgray;
-    }
+
 
 /*!############################################################# */
 
@@ -485,6 +562,12 @@ footer div.credit{
         padding: .5rem 2rem;    
     }
 
+    .small-container{
+        width: 60%;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
     header div.nav a.menu-icon{
         display: none;
     }
@@ -493,26 +576,14 @@ footer div.credit{
         display: block;
     }
 
-    a.button{
-        border-radius:28px;
-        cursor:pointer;
-        background-color: white;
-        font-size:17px;
-        padding:7px 15px;
-        text-decoration:none;
-        color: black;
-    }
-
     section.introduction div.card{
         flex-wrap: nowrap;
     }
 
     section.introduction div.card img{
-        padding: 0;
         width: 100%;
         height: 100%;
     }
-
 
     section.planning div.container{
         flex-direction: row;
@@ -521,19 +592,18 @@ footer div.credit{
     section.planning  .col-image,
     .col-card{
         padding: 50px;
-
     }
 
     div.col-image h1{
         font-size: 2rem;
     }
 
-    section.benefits div.benefit-card{
-        display: inline-block;
-        width: calc(100% / 3 - 1.6rem);
-        background-color: white;
-        border-radius: 30px;
-        margin: 0.8rem;
+    section.about div.about-text{
+        flex-basis: 60%;
     }
 
+    section.about div.about-img{
+        flex-basis: 40%;
+        padding-right: 6rem;
+    }
 }
