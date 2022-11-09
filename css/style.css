@@ -98,6 +98,16 @@ nav{
     display: none;
 }
 
+a.button{
+    border-radius:28px;
+    cursor:pointer;
+    background-color: white;
+    font-size:17px;
+    padding:7px 15px;
+    text-decoration:none;
+    color: black;
+}
+
 header a{
     color: white;
     font-size: 1.5rem;
@@ -208,6 +218,10 @@ div.arrow{
 
 
 /* * ########### TESTIMONIALS SECTION ########### */
+section.testimonials{
+    margin-bottom: 7rem;
+}
+
 section.testimonials div.text{
     width: 100%;
 }
@@ -264,29 +278,64 @@ div.id-card p{
 /* * ########### BENEFITS SECTION ########### */
 section.benefits{
     background-color: #9792E4;
+    color: rgb(141, 135, 135);
 }
 
 section.benefits div.title{
     width: 100%;
     height:80px;
-    background-color: lightsalmon;
+    text-align: center;
+    margin: 3rem;
+}
+
+section.benefits div.title h1{
+    font-size: 2.5rem;
+    color: white;
 }
 
 section.benefits div.benefit-card{
     width: 100%;
-    height: 400px;
     background-color: white;
     border-radius: 30px;
     margin-top: 2rem;
+    padding: 3rem 1.5rem;
+}
+
+section.benefits div.benefit-card h1{
+    color: #9792E4;
+    font-weight: bold;
+    font-size: 4rem;
+    margin-bottom: 30px;
+}
+
+section.benefits div.benefit-card h2{
+    color: #9792E4;
+    margin-bottom: 20px;
+}
+
+section.benefits div.benefit-card p{
+    margin-bottom: 30px;
+}
+
+section.benefits div.benefit-card a.button-more{
+    background-color: #9792E4;
+    color: white;
+}
+
+/* * ########### ABOUT SECTION ########### */
+
+section.about{
+    margin: 5rem 0;
 }
 
 section.about div.about-text,
 div.about-img{
     width: 100%;
-    height: 400px;
-    background-color: cadetblue;
-    margin-top: 2rem;
 }
+
+
+/* * ########### GET SECTION ########### */
+
 
 section.get{
     background-color: #9792E4;
@@ -381,10 +430,10 @@ footer div.credit{
     section.benefits div.benefit-card{
         display: inline-block;
         width:calc(100% / 2 - 2rem);
-        height: 300px;
         background-color: white;
         border-radius: 30px;
         margin: 1rem;
+        text-align: left;
     }
 
     section.benefits div.card-container{
@@ -399,7 +448,6 @@ footer div.credit{
 
     section.about div.about-text,
     div.about-img{
-        height: 400px;
         background-color: cadetblue;
         margin: 1rem;
     }
@@ -445,7 +493,7 @@ footer div.credit{
         display: block;
     }
 
-    nav ul li a.button{
+    a.button{
         border-radius:28px;
         cursor:pointer;
         background-color: white;
@@ -476,19 +524,13 @@ footer div.credit{
 
     }
 
-
-
-
     div.col-image h1{
         font-size: 2rem;
     }
 
-    
-
     section.benefits div.benefit-card{
         display: inline-block;
         width: calc(100% / 3 - 1.6rem);
-        height: 300px;
         background-color: white;
         border-radius: 30px;
         margin: 0.8rem;
